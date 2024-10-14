@@ -6,7 +6,7 @@
 /*   By: luprevos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 00:16:32 by luprevos          #+#    #+#             */
-/*   Updated: 2024/09/28 00:35:15 by luprevos         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:41:23 by luprevos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,14 +61,13 @@ int	ft_free(char *str)
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*ptr;
+	char	*i;
 
-	ptr = (unsigned char *)s;
-	i = 0;
-	while (i < n)
+	i = s;
+	while (n)
 	{
-		ptr[i] = 0;
+		*i = 0;
 		i++;
+		n--;
 	}
 }
