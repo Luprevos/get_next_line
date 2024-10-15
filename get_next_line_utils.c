@@ -6,7 +6,7 @@
 /*   By: luprevos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 00:16:32 by luprevos          #+#    #+#             */
-/*   Updated: 2024/10/14 16:41:23 by luprevos         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:18:34 by luprevos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,6 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 	}
 	return ((char *)s);
-}
-
-int	ft_free(char *str)
-{
-	free(str);
-	return (1);
 }
 
 void	ft_bzero(void *s, size_t n)

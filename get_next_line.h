@@ -6,7 +6,7 @@
 /*   By: luprevos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 00:59:05 by luprevos          #+#    #+#             */
-/*   Updated: 2024/09/29 23:41:44 by luprevos         ###   ########.fr       */
+/*   Updated: 2024/10/15 15:18:11 by luprevos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@
 int		ft_strlen(char *c);
 char	*ft_strdup(char *s);
 char	*ft_strchr(const char *s, int c);
-int		ft_free(char *str);
 void	ft_bzero(void *s, size_t n);
 char	*ft_split(char *tab, char c);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strncpy(char *str, char *s2, char c);
 char	*get_next_line(int fd);
+char	*ft_ligne(char *ligne,	int fd);
 
 #endif
