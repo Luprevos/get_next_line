@@ -120,8 +120,8 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	ft_bzero(apres_n, BUFFER_SIZE + 1);
 	ligne = ft_strdup(apres_n);
+	ft_bzero(apres_n, BUFFER_SIZE + 1);
 	ligne = ft_ligne(ligne, fd);
 	if (ligne == NULL)
 		return (NULL);
@@ -139,13 +139,13 @@ char	*get_next_line(int fd)
 // {
 // 	int fd;
 
-// 	fd = open("get_next_line.c", O_RDONLY);
+// 	fd = open("big_line_no_nl", O_RDONLY);
 // 	int i = 0;
 // 	while (i < 10)
 // 	{
 // 		char *line = get_next_line(fd);
-// 		printf("Line is: %s ...\n\n", line);
-// 		printf("Pointer of: %p.../n/n", line);
+// 		printf("Line is: \"%s\"\n\n", line);
+// 		// printf("Pointer of: %p.../n/n", line);
 // 		free(line);
 // 		i++;
 // 	}
